@@ -43,7 +43,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.5vw;
 }
@@ -53,13 +53,14 @@ section {
 }
 
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   color: #024e76;
   margin-bottom: 35px;
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
+  border-bottom: 3px solid;
 }
 
 /* Hero Style Start */
@@ -70,6 +71,7 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .hero-form {
@@ -97,7 +99,7 @@ section {
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -252,6 +254,11 @@ section {
   background: #024e76;
 }
 
+/* For all Divs in the Contact Info Div */
+.contact-info div {
+  color:white;
+}
+
 /* Reach Out Section Header */
 .contact h2 {
     color: #fce138;
@@ -259,12 +266,7 @@ section {
 
 /* Google Maps iframe */
 .contact-info iframe {
-}
-
-/* Contact Info Area */
-/* For all Divs in the Contact Info Div */
-.contact-info div {
-    color:white;
+  height: 400px;
 }
 
 /* contact-info Div */
@@ -319,7 +321,7 @@ section {
   background: #fce138;
   color: #024e76;
   text-align: center;
-  padding: 15px;
+  padding: 15px 0;
   font-size: 16px;
 }
 
@@ -359,4 +361,19 @@ footer a {
 
 .flex-row {
   display: flex;
+}
+
+/* Media Query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+
+}
+
+/* Media Query for tablets and smaller */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+
 }
