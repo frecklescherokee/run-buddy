@@ -179,12 +179,16 @@ section {
 }
 
 .step-img {
-  flex 1 12%;
+  flex: 1 12%;
   margin-right: 20px;
 }
 
 .step-img img {
   max-width: 100%;
+}
+
+.step-text {
+  flex: 12;
 }
 
 .step-text p {
