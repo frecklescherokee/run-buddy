@@ -242,44 +242,87 @@ section {
   font-size: 17px;
 }
 
+
+/* Reach Out Section */
+
+/* Whole Reach Out Section Background */
 .contact {
   background: #024e76;
 }
 
+/* Reach Out Section Header */
 .contact h2 {
     color: #fce138;
 }
 
+/* Google Maps iframe */
 .contact-info iframe {
-    width: 400px;
-    height: 400px;
 }
 
+/* Contact Info Area */
+/* For all Divs in the Contact Info Div */
 .contact-info div {
-    width: 410px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 30px 0 0 60px;
     color:white;
 }
 
+/* contact-info Div */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Give all elements in the contact-info div a flex of 1 */
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
+/* "Reach Out" and "Contact Us" headers */
 .contact-info h3 {
   color: #fce138;
   font-size: 32px;
 }
 
+/* Contact info paragraph and address */
 .contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
 }
 
+/* Contact info anchors yellow text */
 .contact-info a {
   color: #fce138;
 }
 
+/* Contact Us Form */
+/* Contact us Form input and text area */
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+/* Contact Form Button Styling */
+.contact-info button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+}
+
+
+/* Footer */
 footer {
   background: #fce138;
   width: 100%;
