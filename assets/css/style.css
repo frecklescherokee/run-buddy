@@ -52,6 +52,16 @@ section {
     padding: 60px;
 }
 
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
 /* Hero Style Start */
 .hero {
     background-image: url("../images/hero-bg.jpg");
@@ -61,13 +71,13 @@ section {
     justify-content: center;
     flex-wrap: wrap;
 }
-/* Hero Style End */
 
 .hero-form {
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
   color: #024e76;
+  margin: 3.5%;
   width: 40%;
   margin: 3.5%;
 }
@@ -82,7 +92,7 @@ section {
 }
 
 .hero-cta {
-  width: 35%
+  width: 35%;
   text-align: right;
   margin: 3.5%;
   color: #fff;
@@ -118,6 +128,7 @@ section {
     border: none;
 }
 
+/* What We Do Section */
 .intro h2 {
     font-size: 55px;
     color: #024e76;
@@ -132,16 +143,6 @@ section {
   text-align: center;
 }
 
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
 .primary-border {
   border-color: #fce138;
 }
@@ -150,6 +151,7 @@ section {
   border-color: #39a6b2;
 }
 
+/* What You Do Section */
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
