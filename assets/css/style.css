@@ -360,6 +360,57 @@ section {
   font-size: 17px;
 }
 
+/* Trainer Pics as background images for Transition */
+.trainer-1 {
+  background-image: url("../images/trainer-1.jpg");
+  background-size: cover;
+}
+
+.trainer-2 {
+  background-image: url("../images/trainer-2.jpg");
+  background-size: cover;
+}
+
+.trainer-3 {
+  background-image: url("../images/trainer-3.jpg");
+  background-size: cover;
+}
+
+.trainer-img {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+  position: relative;
+}
+
+/* Trainer image yellow to blue gradients */
+.trainer-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 1));
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Put the Trainer's Name and Specialty in front of the gradient */
+.trainer-img h3 {
+  position: relative;
+  z-index: 1;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.trainer-img h4 {
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+}
+
+
 /* Our Service Plans Section */
 
 .services {
