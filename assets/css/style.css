@@ -348,12 +348,14 @@ section {
 
 .trainer-bio h3 {
   font-size: 28px;
+  display: none;
 }
 
 .trainer-bio h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
+  display: none;
 }
 
 .trainer-bio p {
@@ -383,6 +385,7 @@ section {
   padding: 15px;
   align-items: flex-end;
   position: relative;
+  overflow: hidden;
 }
 
 /* Trainer image yellow to blue gradients */
@@ -394,6 +397,13 @@ section {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+/* Make the gradient only appear when user hovers over the trainer section*/
+.trainer:hover .trainer-img::after {
+  opacity: 1;
 }
 
 /* Put the Trainer's Name and Specialty in front of the gradient */
@@ -402,12 +412,24 @@ section {
   z-index: 1;
   font-size: 28px;
   margin-bottom: 5px;
+  /* put the trainer's name out of sight when not hovered over */
+  top: 200px;
+  transition-duration: 0.6s;
 }
 
 .trainer-img h4 {
   position: relative;
   z-index: 1;
   font-size: 22px;
+  /* put the trainer's speciality out of sight when not hovered over */
+  top: 200px;
+  transition-duration: 0.6s;
+  transition-delay: 0.1s;
+}
+
+/* Make the Trainer's Name and Specialty appear when the Trainer is hovered over */
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+  top: 0;
 }
 
 
@@ -695,6 +717,14 @@ footer a {
     writing-mode: unset;
     grid-column: 1 / -1;
     grid-row: -1;
+  }
+
+  .trainer-img h3, .trainer-img h4, .trainer-img::after {
+    display: none;
+  }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
   }
 
 }
