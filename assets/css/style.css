@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +30,7 @@ header {
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
+    z-index: 9999;
 }
 
 header h1 {
@@ -114,6 +121,74 @@ section {
 .hero-form p {
   margin: 5px 0 15px 0;
 }
+
+/* Make Hero form checkboxes and radio buttons invisible */
+.checkbox-wrapper input, .radio-wrapper input {
+  opacity: 0;
+}
+
+/* prep the label elements for the checkbox and radio buttons for new buttons */
+.checkbox-wrapper label, .radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+/* New Radio Buttons and Check Boxes with cool styling */
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid #024e76;  
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+/* Turn new Radio Buttons into Circles */
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
+
+/* Checked radio button appearance */
+.radio-wrapper label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #024e76;
+  position: absolute;
+  left: -28px;
+  top: -2px;
+  background-image: radial-gradient(circle, #39a6b2, #024e76);
+}
+
+/* Check Mark for new fancy checkbox */
+.checkbox-wrapper label::after {
+  content: "";
+  height: 6px;
+  width: 14px;
+  border-left: 2px solid #024e76;
+  border-bottom: 2px solid #024e76;
+  position: absolute;
+  left: -26px;
+  top: 1px;
+  transform: rotate(-58deg);
+}
+
+/* Make the checkbox and radio buttons look checked if the underlying input is actually checked */
+.checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
+}
+
 
 .hero-cta {
   width: 35%;
